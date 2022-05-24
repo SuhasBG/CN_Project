@@ -47,7 +47,6 @@ for i in range(515):
         net.hosts["1"].tcp.window_size,
         net.hosts["3"].tcp.window_size,
         net.hosts["6"].tcp.window_size,
-        # net.hosts["2"].tcp.window_size
     ])
 
 window_data = np.array(window_data)
