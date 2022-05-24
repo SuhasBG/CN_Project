@@ -51,7 +51,6 @@ class NetworkML():
     
     def step(self):
         self.clock = self.clock + 1
-        # print("Tick",self.clock)
 
         for ip in self.routers:
             self.devices[ip].step()
