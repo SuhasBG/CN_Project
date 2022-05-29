@@ -11,7 +11,7 @@ Y = np.loadtxt(file_path,delimiter=',',skiprows=1,usecols=(3))
 
 poly_features = PolynomialFeatures(degree=2,interaction_only=True)
 X_poly = poly_features.fit_transform(X)
-# print(X_poly)
+
 
 lr = LinearRegression()
 lr.fit(X_poly,Y)
